@@ -19,52 +19,63 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 @Service
 public class RentalCrawlerServiceImpl implements RentalCrawlerService {
-    
+
     Logger log = LoggerFactory.getLogger(RentalCrawlerService.class);
-    
+
     @Override
     public void fetchRentalData() {
         log.info("Starting to fetch rental data...");
-        
-        WebDriverManager.chromedriver().setup(); // 自动选择驱动
-        System.out.println("ChromeDriver version: " + WebDriverManager.chromedriver().getDownloadedDriverVersion());
 
-        // 设置 ChromeOptions
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.59 Safari/537.36");
-        options.addArguments("--disable-web-security");
-        options.addArguments("--allow-insecure-localhost");
-        options.addArguments("--ignore-certificate-errors");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-gpu");
-         //options.addArguments("--headless"); // 根据需要决定是否启用无头模式
+        // 設定 ChromeDriver 版本
+        String chromeDriverVersion = "129.0.6668.59"; // 指定版本
+        WebDriverManager.chromedriver().driverVersion(chromeDriverVersion).setup();
+        log.info("Using ChromeDriver version: {}", chromeDriverVersion);
 
+        // 設置 ChromeOptions
+        ChromeOptions options = createChromeOptions();
         WebDriver driver = new ChromeDriver(options);
-        
+
         try {
-            String urlString = "https://www.google.com"; // 使用 Google 的网址
+            String urlString = "https://rent.591.com.tw/list?other=newPost&sort=posttime_desc"; // 使用 Google 的網址
+            log.info("Navigating to URL: {}", urlString);
             driver.get(urlString);
-            System.out.println("Page title is: " + driver.getTitle());
+            log.info("Page title is: {}", driver.getTitle());
+
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-            wait.until(ExpectedConditions.titleContains("Google"));
+            wait.until(ExpectedConditions.titleContains("591"));
 
             String pageSource = driver.getPageSource();
             Document doc = Jsoup.parse(pageSource);
             parseHTML(doc);
-            
+
             log.info("Successfully fetched rental data");
-            
+
         } catch (Exception e) {
             log.error("Error while fetching rental data", e);
             e.printStackTrace();
         } finally {
-            driver.quit();
+            driver.quit(); // close
+            log.info("Driver quit successfully");
         }
+    }
+
+    private ChromeOptions createChromeOptions() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.59 Safari/537.36");
+        options.addArguments("--remote-allow-origins=*");
+        //        options.addArguments("--disable-web-security");
+//        options.addArguments("--allow-insecure-localhost");
+//        options.addArguments("--ignore-certificate-errors");
+//        options.addArguments("--no-sandbox"); go
+        
+//        options.addArguments("--disable-dev-shm-usage");
+//        options.addArguments("--disable-gpu");
+        // options.addArguments("--headless"); // 根據需要決定是否啟用無頭模式
+        return options;
     }
 
     private void parseHTML(Document doc) {
         log.info("Document is: {}", doc);
-        // 解析 HTML 逻辑
+        // 解析 HTML 邏輯
     }
 }
