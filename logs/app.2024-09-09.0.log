@@ -1,0 +1,1405 @@
+[2024-09-09 11:42:56,713][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 15932 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-09 11:42:56,716][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-09 11:42:56,774][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-09 11:42:56,775][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-09 11:42:57,724][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-09 11:42:57,735][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:42:57,736][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-09 11:42:57,736][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-09 11:42:57,809][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-09 11:42:57,809][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 1033 ms
+[2024-09-09 11:42:58,073][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-09 11:42:58,083][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:42:58,141][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-09 11:42:58,150][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.701 seconds (JVM running for 3.048)
+[2024-09-09 11:42:58,152][INFO][restartedMain][RentalCrawlerServiceImpl:24]: Staring to fetch rental data...
+[2024-09-09 11:43:03,454][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-09 11:43:03,507][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 11:43:03,538][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:61790/devtools/browser/df158826-b832-466b-9191-d883894097ea
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:34)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted
+[2024-09-09 11:45:21,062][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 10708 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-09 11:45:21,065][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-09 11:45:21,101][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-09 11:45:21,101][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-09 11:45:21,754][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-09 11:45:21,762][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:45:21,763][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-09 11:45:21,763][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-09 11:45:21,818][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-09 11:45:21,819][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 717 ms
+[2024-09-09 11:45:22,056][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-09 11:45:22,066][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:45:22,113][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-09 11:45:22,123][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.301 seconds (JVM running for 2.027)
+[2024-09-09 11:45:22,124][INFO][restartedMain][RentalCrawlerServiceImpl:24]: Staring to fetch rental data...
+[2024-09-09 11:45:24,008][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-09 11:45:24,055][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 11:45:24,084][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62245/devtools/browser/243b94de-00b3-422d-b828-c1e9f8af3972
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:34)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted
+[2024-09-09 11:46:04,215][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 23192 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-09 11:46:04,216][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-09 11:46:04,255][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-09 11:46:04,255][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-09 11:46:04,945][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-09 11:46:04,955][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:46:04,956][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-09 11:46:04,957][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-09 11:46:05,013][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-09 11:46:05,013][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 757 ms
+[2024-09-09 11:46:05,262][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-09 11:46:05,273][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:46:05,325][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-09 11:46:05,333][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.407 seconds (JVM running for 2.116)
+[2024-09-09 11:46:05,335][INFO][restartedMain][RentalCrawlerServiceImpl:24]: Staring to fetch rental data...
+[2024-09-09 11:46:07,198][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-09 11:46:07,233][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 11:46:07,259][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62422/devtools/browser/66500c49-038d-4552-8537-d9eaf0755cbe
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:34)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted
+[2024-09-09 11:46:49,487][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 16568 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-09 11:46:49,489][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-09 11:46:49,527][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-09 11:46:49,527][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-09 11:46:50,211][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-09 11:46:50,220][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:46:50,220][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-09 11:46:50,220][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-09 11:46:50,272][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-09 11:46:50,273][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 745 ms
+[2024-09-09 11:46:50,565][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-09 11:46:50,577][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:46:50,630][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-09 11:46:50,639][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.409 seconds (JVM running for 2.052)
+[2024-09-09 11:46:50,641][INFO][restartedMain][RentalCrawlerServiceImpl:24]: Staring to fetch rental data...
+[2024-09-09 11:46:52,506][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-09 11:46:52,541][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 11:46:52,566][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62581/devtools/browser/071ea474-e88d-446e-b459-5d6b75a3f7a5
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:34)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted
+[2024-09-09 11:49:07,473][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 6460 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-09 11:49:07,475][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-09 11:49:07,512][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-09 11:49:07,512][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-09 11:49:08,147][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-09 11:49:08,156][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:49:08,157][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-09 11:49:08,157][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-09 11:49:08,216][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-09 11:49:08,216][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 703 ms
+[2024-09-09 11:49:08,455][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-09 11:49:08,467][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:49:08,515][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-09 11:49:08,526][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.309 seconds (JVM running for 1.956)
+[2024-09-09 11:49:08,526][INFO][restartedMain][RentalCrawlerServiceImpl:24]: Staring to fetch rental data...
+[2024-09-09 11:49:10,393][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-09 11:49:10,426][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 11:49:10,449][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62924/devtools/browser/af307d1d-a21d-4812-b655-7de8c7a7f7bf
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:34)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted
+[2024-09-09 11:52:39,011][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 23968 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-09 11:52:39,015][DEBUG][restartedMain][StartupInfoLogger:56]: Running with Spring Boot v2.7.5, Spring v5.3.23
+[2024-09-09 11:52:39,016][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 82
+[2024-09-09 11:52:39,016][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-09 11:52:39,017][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 80
+[2024-09-09 11:52:39,017][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: name = "javax.management.ObjectName", codebase = ""
+[2024-09-09 11:52:39,017][DEBUG][restartedMain][SpringApplication:667]: Loading source class com.example.demo.DemoApplication
+[2024-09-09 11:52:39,021][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:237]: RMI TCP Connection(2)-127.0.0.1: [127.0.0.1] exception: 
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:643)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1445)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:639)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 11:52:39,075][DEBUG][restartedMain][DeferredLog:252]: Matching URLs for reloading : [file:/D:/LineBot/demo/target/classes/]
+[2024-09-09 11:52:39,075][DEBUG][restartedMain][DeferredLog:252]: Included patterns for restart : []
+[2024-09-09 11:52:39,076][DEBUG][restartedMain][DeferredLog:252]: Excluded patterns for restart : [/spring-boot-actuator/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot/(bin|build|out)/, /spring-boot-starter-[\w-]+/, /spring-boot-autoconfigure/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/]
+[2024-09-09 11:52:39,076][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-09 11:52:39,076][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-09 11:52:39,077][DEBUG][restartedMain][AbstractApplicationContext:629]: Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@343f5903
+[2024-09-09 11:52:39,142][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[2024-09-09 11:52:39,156][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+[2024-09-09 11:52:39,201][DEBUG][restartedMain][ClassPathScanningCandidateComponentProvider:435]: Identified candidate component class: file [D:\LineBot\demo\target\classes\com\example\demo\linebot\HelloController.class]
+[2024-09-09 11:52:39,201][DEBUG][restartedMain][ClassPathScanningCandidateComponentProvider:435]: Identified candidate component class: file [D:\LineBot\demo\target\classes\com\example\demo\rental_crawler\Runner\StartupRunner.class]
+[2024-09-09 11:52:39,202][DEBUG][restartedMain][ClassPathScanningCandidateComponentProvider:435]: Identified candidate component class: file [D:\LineBot\demo\target\classes\com\example\demo\rental_crawler\service\impl\RentalCrawlerServiceImpl.class]
+[2024-09-09 11:52:39,510][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+[2024-09-09 11:52:39,516][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
+[2024-09-09 11:52:39,523][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+[2024-09-09 11:52:39,525][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+[2024-09-09 11:52:39,526][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'forceAutoProxyCreatorToUseClassProxying'
+[2024-09-09 11:52:39,526][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 82
+[2024-09-09 11:52:39,527][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[2024-09-09 11:52:39,527][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 80
+[2024-09-09 11:52:39,527][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: name = "javax.management.ObjectName", codebase = ""
+[2024-09-09 11:52:39,533][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:237]: RMI TCP Connection(2)-127.0.0.1: [127.0.0.1] exception: 
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:643)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1445)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:639)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 11:52:39,540][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[2024-09-09 11:52:39,541][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[2024-09-09 11:52:39,545][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+[2024-09-09 11:52:39,545][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+[2024-09-09 11:52:39,545][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+[2024-09-09 11:52:39,547][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+[2024-09-09 11:52:39,564][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+[2024-09-09 11:52:39,564][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+[2024-09-09 11:52:39,567][DEBUG][restartedMain][UiApplicationContextUtils:85]: Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@61450560]
+[2024-09-09 11:52:39,568][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'tomcatServletWebServerFactory'
+[2024-09-09 11:52:39,568][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
+[2024-09-09 11:52:39,590][DEBUG][restartedMain][DirectJDKLog:175]: The Apache Tomcat Native library could not be found using names [tcnative-2, libtcnative-2, tcnative-1, libtcnative-1] on the java.library.path [C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/Tool/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin/server;D:/Tool/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\lucas\AppData\Local\Microsoft\WindowsApps;;D:\Tool\eclipse;;.]. The errors reported were [Can't load library: D:\LineBot\demo\bin\tcnative-2.dll, Can't load library: D:\LineBot\demo\bin\libtcnative-2.dll, Can't load library: D:\LineBot\demo\bin\tcnative-1.dll, Can't load library: D:\LineBot\demo\bin\libtcnative-1.dll, no tcnative-2 in java.library.path, no libtcnative-2 in java.library.path, no tcnative-1 in java.library.path, no libtcnative-1 in java.library.path]
+org.apache.tomcat.jni.LibraryNotFoundError: Can't load library: D:\LineBot\demo\bin\tcnative-2.dll, Can't load library: D:\LineBot\demo\bin\libtcnative-2.dll, Can't load library: D:\LineBot\demo\bin\tcnative-1.dll, Can't load library: D:\LineBot\demo\bin\libtcnative-1.dll, no tcnative-2 in java.library.path, no libtcnative-2 in java.library.path, no tcnative-1 in java.library.path, no libtcnative-1 in java.library.path
+	at org.apache.tomcat.jni.Library.<init>(Library.java:93)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:234)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:201)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:112)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultServerLifecycleListeners(TomcatServletWebServerFactory.java:182)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:129)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:219)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+[2024-09-09 11:52:39,603][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'websocketServletWebServerCustomizer'
+[2024-09-09 11:52:39,604][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+[2024-09-09 11:52:39,606][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'servletWebServerFactoryCustomizer'
+[2024-09-09 11:52:39,606][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+[2024-09-09 11:52:39,611][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2024-09-09 11:52:39,617][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+[2024-09-09 11:52:39,641][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2024-09-09 11:52:39,642][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'
+[2024-09-09 11:52:39,644][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2024-09-09 11:52:39,644][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'tomcatWebServerFactoryCustomizer'
+[2024-09-09 11:52:39,645][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration'
+[2024-09-09 11:52:39,645][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment'
+[2024-09-09 11:52:39,646][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2024-09-09 11:52:39,647][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer'
+[2024-09-09 11:52:39,648][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+[2024-09-09 11:52:39,651][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2024-09-09 11:52:39,682][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'errorPageCustomizer'
+[2024-09-09 11:52:39,683][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+[2024-09-09 11:52:39,683][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2024-09-09 11:52:39,685][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'dispatcherServletRegistration'
+[2024-09-09 11:52:39,685][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
+[2024-09-09 11:52:39,687][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'dispatcherServlet'
+[2024-09-09 11:52:39,687][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration'
+[2024-09-09 11:52:39,689][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+[2024-09-09 11:52:39,693][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'dispatcherServlet' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+[2024-09-09 11:52:39,705][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet'
+[2024-09-09 11:52:39,705][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+[2024-09-09 11:52:39,707][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'multipartConfigElement'
+[2024-09-09 11:52:39,708][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration'
+[2024-09-09 11:52:39,709][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+[2024-09-09 11:52:39,712][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via constructor to bean named 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+[2024-09-09 11:52:39,717][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'errorPageCustomizer' via factory method to bean named 'dispatcherServletRegistration'
+[2024-09-09 11:52:39,729][DEBUG][restartedMain][DirectJDKLog:175]: Class not found so assuming code is running on a pre-Java 9 JVM
+java.lang.ClassNotFoundException: java.lang.reflect.InaccessibleObjectException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.apache.tomcat.util.compat.Jre9Compat.<clinit>(Jre9Compat.java:83)
+	at org.apache.tomcat.util.compat.JreCompat.<clinit>(JreCompat.java:72)
+	at org.apache.catalina.startup.Tomcat.<clinit>(Tomcat.java:1304)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:194)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+[2024-09-09 11:52:39,730][DEBUG][restartedMain][DirectJDKLog:175]: Class not found so assuming code is running on a pre-Java 16 JVM
+java.lang.ClassNotFoundException: java.net.UnixDomainSocketAddress
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.apache.tomcat.util.compat.Jre16Compat.<clinit>(Jre16Compat.java:47)
+	at org.apache.tomcat.util.compat.JreCompat.<clinit>(JreCompat.java:72)
+	at org.apache.catalina.startup.Tomcat.<clinit>(Tomcat.java:1304)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:194)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+[2024-09-09 11:52:39,731][DEBUG][restartedMain][DirectJDKLog:175]: Class not found so assuming code is running on a pre-Java 19 JVM
+java.lang.ClassNotFoundException: java.lang.WrongThreadException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.apache.tomcat.util.compat.Jre19Compat.<clinit>(Jre19Compat.java:37)
+	at org.apache.tomcat.util.compat.JreCompat.<clinit>(JreCompat.java:72)
+	at org.apache.catalina.startup.Tomcat.<clinit>(Tomcat.java:1304)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:194)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+[2024-09-09 11:52:39,771][DEBUG][restartedMain][DirectJDKLog:173]: IntrospectionUtils: setProperty(class org.apache.coyote.http11.Http11NioProtocol port=8080)
+[2024-09-09 11:52:39,778][DEBUG][restartedMain][DirectJDKLog:173]: IntrospectionUtils: setProperty(class org.apache.coyote.http11.Http11NioProtocol bindOnInit=false)
+[2024-09-09 11:52:39,778][DEBUG][restartedMain][DirectJDKLog:173]: IntrospectionUtils: setProperty(class org.apache.tomcat.util.net.NioEndpoint bindOnInit=false)
+[2024-09-09 11:52:39,781][DEBUG][restartedMain][DirectJDKLog:173]: IntrospectionUtils: setProperty(class org.apache.coyote.http11.Http11NioProtocol maxPostSize=2097152)
+[2024-09-09 11:52:39,781][DEBUG][restartedMain][DirectJDKLog:173]: IntrospectionUtils: setProperty(class org.apache.tomcat.util.net.NioEndpoint maxPostSize=2097152)
+[2024-09-09 11:52:39,797][DEBUG][restartedMain][DirectJDKLog:173]: Add child StandardHost[localhost] StandardEngine[Tomcat]
+[2024-09-09 11:52:39,797][DEBUG][restartedMain][DocumentRoot:81]: Code archive: C:\Users\lucas\.m2\repository\org\springframework\boot\spring-boot\2.7.5\spring-boot-2.7.5.jar
+[2024-09-09 11:52:39,798][DEBUG][restartedMain][DocumentRoot:125]: Code archive: C:\Users\lucas\.m2\repository\org\springframework\boot\spring-boot\2.7.5\spring-boot-2.7.5.jar
+[2024-09-09 11:52:39,798][DEBUG][restartedMain][DocumentRoot:69]: Document root: D:\LineBot\demo\src\main\webapp
+[2024-09-09 11:52:39,821][DEBUG][restartedMain][DirectJDKLog:173]: Add child TomcatEmbeddedContext[] StandardEngine[Tomcat].StandardHost[localhost]
+[2024-09-09 11:52:39,888][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-09 11:52:39,888][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardServer[-1]] to [INITIALIZING]
+[2024-09-09 11:52:39,895][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@1d5d747c] to [INITIALIZING]
+[2024-09-09 11:52:39,895][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@1d5d747c] to [INITIALIZED]
+[2024-09-09 11:52:39,895][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardService[Tomcat]] to [INITIALIZING]
+[2024-09-09 11:52:39,895][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat]] to [INITIALIZING]
+[2024-09-09 11:52:39,896][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat]] to [INITIALIZED]
+[2024-09-09 11:52:39,897][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.mapper.MapperListener@5e04a2a1] to [INITIALIZING]
+[2024-09-09 11:52:39,897][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.mapper.MapperListener@5e04a2a1] to [INITIALIZED]
+[2024-09-09 11:52:39,897][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [Connector[HTTP/1.1-8080]] to [INITIALIZING]
+[2024-09-09 11:52:39,901][DEBUG][restartedMain][DirectJDKLog:173]: IntrospectionUtils: setProperty(class org.apache.coyote.http11.Http11NioProtocol parseBodyMethods=POST)
+[2024-09-09 11:52:39,901][DEBUG][restartedMain][DirectJDKLog:173]: IntrospectionUtils: setProperty(class org.apache.tomcat.util.net.NioEndpoint parseBodyMethods=POST)
+[2024-09-09 11:52:39,901][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:52:39,902][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [Connector[HTTP/1.1-8080]] to [INITIALIZED]
+[2024-09-09 11:52:39,902][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardService[Tomcat]] to [INITIALIZED]
+[2024-09-09 11:52:39,902][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardServer[-1]] to [INITIALIZED]
+[2024-09-09 11:52:39,903][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardServer[-1]] to [STARTING_PREP]
+[2024-09-09 11:52:39,903][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardServer[-1]] to [STARTING]
+[2024-09-09 11:52:39,903][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@1d5d747c] to [STARTING_PREP]
+[2024-09-09 11:52:39,903][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@1d5d747c] to [STARTING]
+[2024-09-09 11:52:39,903][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@1d5d747c] to [STARTED]
+[2024-09-09 11:52:39,904][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardService[Tomcat]] to [STARTING_PREP]
+[2024-09-09 11:52:39,904][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-09 11:52:39,904][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardService[Tomcat]] to [STARTING]
+[2024-09-09 11:52:39,904][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat]] to [STARTING_PREP]
+[2024-09-09 11:52:39,904][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-09 11:52:39,905][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [SimpleRealm[StandardEngine[Tomcat]]] to [INITIALIZING]
+[2024-09-09 11:52:39,906][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [SimpleRealm[StandardEngine[Tomcat]]] to [INITIALIZED]
+[2024-09-09 11:52:39,906][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [SimpleRealm[StandardEngine[Tomcat]]] to [STARTING_PREP]
+[2024-09-09 11:52:39,907][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [SimpleRealm[StandardEngine[Tomcat]]] to [STARTING]
+[2024-09-09 11:52:39,907][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [SimpleRealm[StandardEngine[Tomcat]]] to [STARTED]
+[2024-09-09 11:52:39,908][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost]] to [INITIALIZING]
+[2024-09-09 11:52:39,908][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost]] to [INITIALIZED]
+[2024-09-09 11:52:39,908][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost]] to [STARTING_PREP]
+[2024-09-09 11:52:39,910][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]] to [INITIALIZING]
+[2024-09-09 11:52:39,910][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]] to [INITIALIZED]
+[2024-09-09 11:52:39,910][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]] to [STARTING_PREP]
+[2024-09-09 11:52:39,911][DEBUG][restartedMain][DirectJDKLog:173]: Starting ROOT
+[2024-09-09 11:52:39,917][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory$LoaderHidingResourceRoot@29009a26] to [INITIALIZING]
+[2024-09-09 11:52:39,920][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory$LoaderHidingResourceRoot@29009a26] to [INITIALIZED]
+[2024-09-09 11:52:39,921][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory$LoaderHidingResourceRoot@29009a26] to [STARTING_PREP]
+[2024-09-09 11:52:39,924][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory$LoaderHidingWebResourceSet@48c00d6c] to [INITIALIZING]
+[2024-09-09 11:52:39,925][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory$LoaderHidingWebResourceSet@48c00d6c] to [INITIALIZED]
+[2024-09-09 11:52:39,925][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory$LoaderHidingWebResourceSet@48c00d6c] to [STARTING_PREP]
+[2024-09-09 11:52:39,926][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory$LoaderHidingWebResourceSet@48c00d6c] to [STARTING]
+[2024-09-09 11:52:39,926][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory$LoaderHidingWebResourceSet@48c00d6c] to [STARTED]
+[2024-09-09 11:52:39,927][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory$LoaderHidingResourceRoot@29009a26] to [STARTING]
+[2024-09-09 11:52:39,927][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory$LoaderHidingResourceRoot@29009a26] to [STARTED]
+[2024-09-09 11:52:39,955][DEBUG][restartedMain][DirectJDKLog:173]: Processing standard container startup
+[2024-09-09 11:52:39,955][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZING]
+[2024-09-09 11:52:39,956][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZED]
+[2024-09-09 11:52:39,956][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING_PREP]
+[2024-09-09 11:52:39,956][DEBUG][restartedMain][DirectJDKLog:173]: Starting this Loader
+[2024-09-09 11:52:39,962][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING]
+[2024-09-09 11:52:39,962][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTED]
+[2024-09-09 11:52:39,978][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZING]
+[2024-09-09 11:52:39,978][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZED]
+[2024-09-09 11:52:39,978][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING_PREP]
+[2024-09-09 11:52:39,978][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZING]
+[2024-09-09 11:52:39,978][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZED]
+[2024-09-09 11:52:39,979][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING_PREP]
+[2024-09-09 11:52:39,980][DEBUG][restartedMain][DirectJDKLog:173]: No SingleSignOn Valve is present
+[2024-09-09 11:52:39,980][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING]
+[2024-09-09 11:52:39,980][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTED]
+[2024-09-09 11:52:39,980][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardContextValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZING]
+[2024-09-09 11:52:39,981][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardContextValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZED]
+[2024-09-09 11:52:39,981][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardContextValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING_PREP]
+[2024-09-09 11:52:39,981][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardContextValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING]
+[2024-09-09 11:52:39,982][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardContextValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTED]
+[2024-09-09 11:52:39,982][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING]
+[2024-09-09 11:52:39,982][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTED]
+[2024-09-09 11:52:39,982][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@71dac44b] to [INITIALIZING]
+[2024-09-09 11:52:39,983][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@71dac44b] to [INITIALIZED]
+[2024-09-09 11:52:39,983][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@71dac44b] to [STARTING_PREP]
+[2024-09-09 11:52:39,983][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@71dac44b] to [STARTING]
+[2024-09-09 11:52:39,983][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@71dac44b] to [STARTED]
+[2024-09-09 11:52:39,988][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-09 11:52:39,990][DEBUG][restartedMain][ServletWebServerApplicationContext:286]: Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[2024-09-09 11:52:39,990][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 913 ms
+[2024-09-09 11:52:39,993][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'requestContextFilter'
+[2024-09-09 11:52:39,995][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'formContentFilter'
+[2024-09-09 11:52:39,995][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+[2024-09-09 11:52:39,999][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'characterEncodingFilter'
+[2024-09-09 11:52:40,005][DEBUG][restartedMain][ServletContextInitializerBeans:236]: Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+[2024-09-09 11:52:40,005][DEBUG][restartedMain][ServletContextInitializerBeans:236]: Mapping servlets: dispatcherServlet urls=[/]
+[2024-09-09 11:52:40,008][DEBUG][restartedMain][DirectJDKLog:173]: Add child StandardWrapper[dispatcherServlet] StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]
+[2024-09-09 11:52:40,008][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]] to [INITIALIZING]
+[2024-09-09 11:52:40,009][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]] to [INITIALIZED]
+[2024-09-09 11:52:40,009][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]] to [STARTING_PREP]
+[2024-09-09 11:52:40,009][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [INITIALIZING]
+[2024-09-09 11:52:40,010][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [INITIALIZED]
+[2024-09-09 11:52:40,010][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTING_PREP]
+[2024-09-09 11:52:40,010][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardWrapperValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [INITIALIZING]
+[2024-09-09 11:52:40,010][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardWrapperValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [INITIALIZED]
+[2024-09-09 11:52:40,010][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardWrapperValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTING_PREP]
+[2024-09-09 11:52:40,011][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardWrapperValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTING]
+[2024-09-09 11:52:40,011][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardWrapperValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTED]
+[2024-09-09 11:52:40,011][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTING]
+[2024-09-09 11:52:40,011][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTED]
+[2024-09-09 11:52:40,011][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]] to [STARTING]
+[2024-09-09 11:52:40,012][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]] to [STARTED]
+[2024-09-09 11:52:40,029][DEBUG][restartedMain][DirectJDKLog:173]: Configuring application event listeners
+[2024-09-09 11:52:40,029][DEBUG][restartedMain][DirectJDKLog:173]: Sending application start events
+[2024-09-09 11:52:40,031][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardManager[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZING]
+[2024-09-09 11:52:40,032][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardManager[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZED]
+[2024-09-09 11:52:40,032][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardManager[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING_PREP]
+[2024-09-09 11:52:40,032][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.LazySessionIdGenerator@6071a605] to [INITIALIZING]
+[2024-09-09 11:52:40,032][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.LazySessionIdGenerator@6071a605] to [INITIALIZED]
+[2024-09-09 11:52:40,033][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.LazySessionIdGenerator@6071a605] to [STARTING_PREP]
+[2024-09-09 11:52:40,033][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.LazySessionIdGenerator@6071a605] to [STARTING]
+[2024-09-09 11:52:40,033][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.springframework.boot.web.embedded.tomcat.LazySessionIdGenerator@6071a605] to [STARTED]
+[2024-09-09 11:52:40,033][DEBUG][restartedMain][DirectJDKLog:173]: Start: Loading persisted sessions
+[2024-09-09 11:52:40,033][DEBUG][restartedMain][DirectJDKLog:173]: Loading persisted sessions from [C:\Users\lucas\AppData\Local\Temp\69E58F1ED35AD32409D237ABB669611560C90D0F\servlet-sessions\SESSIONS.ser]
+[2024-09-09 11:52:40,034][DEBUG][restartedMain][DirectJDKLog:173]: No persisted data file found
+[2024-09-09 11:52:40,035][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardManager[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING]
+[2024-09-09 11:52:40,035][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardManager[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTED]
+[2024-09-09 11:52:40,035][DEBUG][restartedMain][DirectJDKLog:173]: Starting filters
+[2024-09-09 11:52:40,035][DEBUG][restartedMain][DirectJDKLog:173]:  Starting filter 'requestContextFilter'
+[2024-09-09 11:52:40,036][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 82
+[2024-09-09 11:52:40,037][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 80
+[2024-09-09 11:52:40,037][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: name = "javax.management.ObjectName", codebase = ""
+[2024-09-09 11:52:40,038][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:237]: RMI TCP Connection(2)-127.0.0.1: [127.0.0.1] exception: 
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:643)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1445)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:639)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 11:52:40,039][DEBUG][restartedMain][GenericFilterBean:242]: Filter 'requestContextFilter' configured for use
+[2024-09-09 11:52:40,040][DEBUG][restartedMain][DirectJDKLog:173]:  Starting filter 'Tomcat WebSocket (JSR356) Filter'
+[2024-09-09 11:52:40,041][DEBUG][restartedMain][DirectJDKLog:173]:  Starting filter 'characterEncodingFilter'
+[2024-09-09 11:52:40,041][DEBUG][restartedMain][GenericFilterBean:242]: Filter 'characterEncodingFilter' configured for use
+[2024-09-09 11:52:40,041][DEBUG][restartedMain][DirectJDKLog:173]:  Starting filter 'formContentFilter'
+[2024-09-09 11:52:40,041][DEBUG][restartedMain][GenericFilterBean:242]: Filter 'formContentFilter' configured for use
+[2024-09-09 11:52:40,042][DEBUG][restartedMain][DirectJDKLog:173]: Starting completed
+[2024-09-09 11:52:40,042][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]] to [STARTING]
+[2024-09-09 11:52:40,042][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]] to [STARTED]
+[2024-09-09 11:52:40,042][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZING]
+[2024-09-09 11:52:40,043][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZED]
+[2024-09-09 11:52:40,043][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING_PREP]
+[2024-09-09 11:52:40,043][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [ErrorReportValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZING]
+[2024-09-09 11:52:40,043][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [ErrorReportValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZED]
+[2024-09-09 11:52:40,043][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [ErrorReportValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING_PREP]
+[2024-09-09 11:52:40,043][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [ErrorReportValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING]
+[2024-09-09 11:52:40,044][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [ErrorReportValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTED]
+[2024-09-09 11:52:40,044][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardHostValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZING]
+[2024-09-09 11:52:40,044][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardHostValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZED]
+[2024-09-09 11:52:40,044][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardHostValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING_PREP]
+[2024-09-09 11:52:40,044][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardHostValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING]
+[2024-09-09 11:52:40,045][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardHostValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTED]
+[2024-09-09 11:52:40,045][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING]
+[2024-09-09 11:52:40,045][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTED]
+[2024-09-09 11:52:40,045][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost]] to [STARTING]
+[2024-09-09 11:52:40,045][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat].StandardHost[localhost]] to [STARTED]
+[2024-09-09 11:52:40,045][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat]]] to [INITIALIZING]
+[2024-09-09 11:52:40,045][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat]]] to [INITIALIZED]
+[2024-09-09 11:52:40,045][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat]]] to [STARTING_PREP]
+[2024-09-09 11:52:40,046][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngineValve[StandardEngine[Tomcat]]] to [INITIALIZING]
+[2024-09-09 11:52:40,046][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngineValve[StandardEngine[Tomcat]]] to [INITIALIZED]
+[2024-09-09 11:52:40,046][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngineValve[StandardEngine[Tomcat]]] to [STARTING_PREP]
+[2024-09-09 11:52:40,046][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngineValve[StandardEngine[Tomcat]]] to [STARTING]
+[2024-09-09 11:52:40,046][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngineValve[StandardEngine[Tomcat]]] to [STARTED]
+[2024-09-09 11:52:40,046][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat]]] to [STARTING]
+[2024-09-09 11:52:40,047][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardPipeline[StandardEngine[Tomcat]]] to [STARTED]
+[2024-09-09 11:52:40,047][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat]] to [STARTING]
+[2024-09-09 11:52:40,049][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardEngine[Tomcat]] to [STARTED]
+[2024-09-09 11:52:40,049][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.mapper.MapperListener@5e04a2a1] to [STARTING_PREP]
+[2024-09-09 11:52:40,050][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.mapper.MapperListener@5e04a2a1] to [STARTING]
+[2024-09-09 11:52:40,051][DEBUG][restartedMain][DirectJDKLog:173]: Registered host [localhost]
+[2024-09-09 11:52:40,052][DEBUG][restartedMain][DirectJDKLog:173]: Register Wrapper [dispatcherServlet] in Context [] for service [StandardService[Tomcat]]
+[2024-09-09 11:52:40,052][DEBUG][restartedMain][DirectJDKLog:173]: Register Context [] for service [StandardService[Tomcat]]
+[2024-09-09 11:52:40,053][DEBUG][restartedMain][DirectJDKLog:173]: Register host [localhost] at domain [null] for service [StandardService[Tomcat]]
+[2024-09-09 11:52:40,053][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [org.apache.catalina.mapper.MapperListener@5e04a2a1] to [STARTED]
+[2024-09-09 11:52:40,053][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardService[Tomcat]] to [STARTED]
+[2024-09-09 11:52:40,054][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [StandardServer[-1]] to [STARTED]
+[2024-09-09 11:52:40,059][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'demoApplication'
+[2024-09-09 11:52:40,061][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'helloController'
+[2024-09-09 11:52:40,064][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'startupRunner'
+[2024-09-09 11:52:40,068][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'rentalCrawlerServiceImpl'
+[2024-09-09 11:52:40,073][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+[2024-09-09 11:52:40,073][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+[2024-09-09 11:52:40,074][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
+[2024-09-09 11:52:40,074][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+[2024-09-09 11:52:40,075][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration'
+[2024-09-09 11:52:40,076][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+[2024-09-09 11:52:40,077][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'taskExecutorBuilder'
+[2024-09-09 11:52:40,078][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+[2024-09-09 11:52:40,080][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+[2024-09-09 11:52:40,082][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration'
+[2024-09-09 11:52:40,084][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'error'
+[2024-09-09 11:52:40,084][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'beanNameViewResolver'
+[2024-09-09 11:52:40,086][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+[2024-09-09 11:52:40,088][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+[2024-09-09 11:52:40,096][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@343f5903'
+[2024-09-09 11:52:40,096][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+[2024-09-09 11:52:40,096][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'conventionErrorViewResolver'
+[2024-09-09 11:52:40,099][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'errorAttributes'
+[2024-09-09 11:52:40,101][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'basicErrorController'
+[2024-09-09 11:52:40,102][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
+[2024-09-09 11:52:40,106][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+[2024-09-09 11:52:40,109][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+[2024-09-09 11:52:40,109][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+[2024-09-09 11:52:40,109][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@1bf4c2f6'
+[2024-09-09 11:52:40,132][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+[2024-09-09 11:52:40,133][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+[2024-09-09 11:52:40,133][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+[2024-09-09 11:52:40,133][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@1bf4c2f6'
+[2024-09-09 11:52:40,136][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+[2024-09-09 11:52:40,139][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+[2024-09-09 11:52:40,145][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mvcConversionService'
+[2024-09-09 11:52:40,148][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mvcValidator'
+[2024-09-09 11:52:40,150][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+[2024-09-09 11:52:40,150][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+[2024-09-09 11:52:40,150][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+[2024-09-09 11:52:40,151][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+[2024-09-09 11:52:40,151][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+[2024-09-09 11:52:40,151][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+[2024-09-09 11:52:40,160][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'messageConverters'
+[2024-09-09 11:52:40,160][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+[2024-09-09 11:52:40,165][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'stringHttpMessageConverter'
+[2024-09-09 11:52:40,165][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+[2024-09-09 11:52:40,167][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
+[2024-09-09 11:52:40,171][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
+[2024-09-09 11:52:40,172][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+[2024-09-09 11:52:40,172][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'jacksonObjectMapper'
+[2024-09-09 11:52:40,173][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+[2024-09-09 11:52:40,174][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+[2024-09-09 11:52:40,176][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+[2024-09-09 11:52:40,177][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+[2024-09-09 11:52:40,178][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+[2024-09-09 11:52:40,181][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@343f5903'
+[2024-09-09 11:52:40,181][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+[2024-09-09 11:52:40,182][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@343f5903'
+[2024-09-09 11:52:40,183][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
+[2024-09-09 11:52:40,184][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'parameterNamesModule'
+[2024-09-09 11:52:40,185][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+[2024-09-09 11:52:40,189][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'jsonComponentModule'
+[2024-09-09 11:52:40,189][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+[2024-09-09 11:52:40,196][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'jsonMixinModule'
+[2024-09-09 11:52:40,197][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@343f5903'
+[2024-09-09 11:52:40,200][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+[2024-09-09 11:52:40,210][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
+[2024-09-09 11:52:40,215][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'applicationTaskExecutor'
+[2024-09-09 11:52:40,215][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+[2024-09-09 11:52:40,219][DEBUG][restartedMain][ExecutorConfigurationSupport:181]: Initializing ExecutorService 'applicationTaskExecutor'
+[2024-09-09 11:52:40,225][DEBUG][restartedMain][RequestMappingHandlerAdapter:625]: ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-09-09 11:52:40,244][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'welcomePageHandlerMapping'
+[2024-09-09 11:52:40,245][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+[2024-09-09 11:52:40,248][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@343f5903'
+[2024-09-09 11:52:40,249][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2024-09-09 11:52:40,249][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2024-09-09 11:52:40,257][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'localeResolver'
+[2024-09-09 11:52:40,258][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'themeResolver'
+[2024-09-09 11:52:40,259][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'flashMapManager'
+[2024-09-09 11:52:40,261][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+[2024-09-09 11:52:40,262][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+[2024-09-09 11:52:40,262][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2024-09-09 11:52:40,262][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2024-09-09 11:52:40,282][DEBUG][restartedMain][AbstractHandlerMethodMapping:295]: 
+	c.e.d.l.HelloController:
+	{GET [/Test/HelloWorld]}: Hello()
+[2024-09-09 11:52:40,285][DEBUG][restartedMain][AbstractHandlerMethodMapping:295]: 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+[2024-09-09 11:52:40,287][DEBUG][restartedMain][AbstractHandlerMethodMapping:367]: 3 mappings in 'requestMappingHandlerMapping'
+[2024-09-09 11:52:40,287][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mvcPatternParser'
+[2024-09-09 11:52:40,288][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mvcUrlPathHelper'
+[2024-09-09 11:52:40,288][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mvcPathMatcher'
+[2024-09-09 11:52:40,288][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+[2024-09-09 11:52:40,289][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2024-09-09 11:52:40,289][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2024-09-09 11:52:40,290][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'beanNameHandlerMapping'
+[2024-09-09 11:52:40,290][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2024-09-09 11:52:40,290][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2024-09-09 11:52:40,291][DEBUG][restartedMain][AbstractDetectingUrlHandlerMapping:86]: 'beanNameHandlerMapping' {}
+[2024-09-09 11:52:40,291][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'routerFunctionMapping'
+[2024-09-09 11:52:40,292][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+[2024-09-09 11:52:40,292][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2024-09-09 11:52:40,295][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'resourceHandlerMapping'
+[2024-09-09 11:52:40,296][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+[2024-09-09 11:52:40,296][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2024-09-09 11:52:40,296][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2024-09-09 11:52:40,304][DEBUG][restartedMain][SimpleUrlHandlerMapping:177]: 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+[2024-09-09 11:52:40,305][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+[2024-09-09 11:52:40,305][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'handlerFunctionAdapter'
+[2024-09-09 11:52:40,306][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+[2024-09-09 11:52:40,307][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+[2024-09-09 11:52:40,307][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+[2024-09-09 11:52:40,308][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+[2024-09-09 11:52:40,309][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+[2024-09-09 11:52:40,309][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'handlerExceptionResolver'
+[2024-09-09 11:52:40,310][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
+[2024-09-09 11:52:40,313][DEBUG][restartedMain][ExceptionHandlerExceptionResolver:307]: ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-09-09 11:52:40,315][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mvcViewResolver'
+[2024-09-09 11:52:40,316][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+[2024-09-09 11:52:40,317][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'viewNameTranslator'
+[2024-09-09 11:52:40,319][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'defaultViewResolver'
+[2024-09-09 11:52:40,323][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'viewResolver'
+[2024-09-09 11:52:40,323][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@1bf4c2f6'
+[2024-09-09 11:52:40,325][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'viewResolver'
+[2024-09-09 11:52:40,326][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+[2024-09-09 11:52:40,326][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+[2024-09-09 11:52:40,327][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' via constructor to bean named 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+[2024-09-09 11:52:40,328][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mbeanExporter'
+[2024-09-09 11:52:40,328][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'objectNamingStrategy'
+[2024-09-09 11:52:40,330][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+[2024-09-09 11:52:40,330][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@1bf4c2f6'
+[2024-09-09 11:52:40,335][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'mbeanServer'
+[2024-09-09 11:52:40,338][DEBUG][restartedMain][JmxUtils:127]: Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+[2024-09-09 11:52:40,340][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+[2024-09-09 11:52:40,341][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
+[2024-09-09 11:52:40,341][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
+[2024-09-09 11:52:40,343][DEBUG][restartedMain][SpringApplicationAdminMXBeanRegistrar:131]: Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+[2024-09-09 11:52:40,343][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
+[2024-09-09 11:52:40,343][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+[2024-09-09 11:52:40,344][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+[2024-09-09 11:52:40,344][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'applicationAvailability'
+[2024-09-09 11:52:40,345][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+[2024-09-09 11:52:40,345][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
+[2024-09-09 11:52:40,346][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'lifecycleProcessor'
+[2024-09-09 11:52:40,346][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+[2024-09-09 11:52:40,347][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'lifecycleProcessor' via factory method to bean named 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+[2024-09-09 11:52:40,348][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
+[2024-09-09 11:52:40,348][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+[2024-09-09 11:52:40,351][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+[2024-09-09 11:52:40,352][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+[2024-09-09 11:52:40,353][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.netty.NettyAutoConfiguration'
+[2024-09-09 11:52:40,353][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.netty-org.springframework.boot.autoconfigure.netty.NettyProperties'
+[2024-09-09 11:52:40,354][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.autoconfigure.netty.NettyAutoConfiguration' via constructor to bean named 'spring.netty-org.springframework.boot.autoconfigure.netty.NettyProperties'
+[2024-09-09 11:52:40,354][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration'
+[2024-09-09 11:52:40,355][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties'
+[2024-09-09 11:52:40,356][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+[2024-09-09 11:52:40,356][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'scheduledBeanLazyInitializationExcludeFilter'
+[2024-09-09 11:52:40,357][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'taskSchedulerBuilder'
+[2024-09-09 11:52:40,358][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+[2024-09-09 11:52:40,359][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+[2024-09-09 11:52:40,360][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration'
+[2024-09-09 11:52:40,360][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+[2024-09-09 11:52:40,360][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'multipartResolver'
+[2024-09-09 11:52:40,362][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration'
+[2024-09-09 11:52:40,363][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+[2024-09-09 11:52:40,365][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration' via constructor to bean named 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+[2024-09-09 11:52:40,365][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'restartingClassPathChangedEventListener'
+[2024-09-09 11:52:40,366][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'fileSystemWatcherFactory'
+[2024-09-09 11:52:40,367][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'restartingClassPathChangedEventListener' via factory method to bean named 'fileSystemWatcherFactory'
+[2024-09-09 11:52:40,368][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'classPathFileSystemWatcher'
+[2024-09-09 11:52:40,368][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'classPathRestartStrategy'
+[2024-09-09 11:52:40,369][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'classPathFileSystemWatcher' via factory method to bean named 'fileSystemWatcherFactory'
+[2024-09-09 11:52:40,369][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'classPathFileSystemWatcher' via factory method to bean named 'classPathRestartStrategy'
+[2024-09-09 11:52:40,374][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'conditionEvaluationDeltaLoggingListener'
+[2024-09-09 11:52:40,375][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$LiveReloadConfiguration'
+[2024-09-09 11:52:40,375][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'optionalLiveReloadServer'
+[2024-09-09 11:52:40,376][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'liveReloadServer' via factory method to bean named 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+[2024-09-09 11:52:40,378][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'optionalLiveReloadServer' via factory method to bean named 'liveReloadServer'
+[2024-09-09 11:52:40,379][DEBUG][restartedMain][LiveReloadServer:113]: Starting live reload server on port 35729
+[2024-09-09 11:52:40,380][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-09 11:52:40,381][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'liveReloadServerEventListener'
+[2024-09-09 11:52:40,381][DEBUG][restartedMain][ConstructorResolver:808]: Autowiring by type from bean name 'liveReloadServerEventListener' via factory method to bean named 'optionalLiveReloadServer'
+[2024-09-09 11:52:40,382][DEBUG][restartedMain][DefaultSingletonBeanRegistry:225]: Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration'
+[2024-09-09 11:52:40,389][DEBUG][restartedMain][MBeanExporter:434]: Registering beans for JMX exposure on startup
+[2024-09-09 11:52:40,389][DEBUG][restartedMain][MBeanExporter:541]: Autodetecting user-defined JMX MBeans
+[2024-09-09 11:52:40,395][DEBUG][restartedMain][DefaultLifecycleProcessor$LifecycleGroup:352]: Starting beans in phase -2147483647
+[2024-09-09 11:52:40,395][DEBUG][restartedMain][DefaultLifecycleProcessor:184]: Successfully started bean 'springBootLoggingLifecycle'
+[2024-09-09 11:52:40,395][DEBUG][restartedMain][DefaultLifecycleProcessor$LifecycleGroup:352]: Starting beans in phase 2147483646
+[2024-09-09 11:52:40,395][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [Connector[HTTP/1.1-8080]] to [STARTING_PREP]
+[2024-09-09 11:52:40,395][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [Connector[HTTP/1.1-8080]] to [STARTING]
+[2024-09-09 11:52:40,396][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:52:40,445][DEBUG][http-nio-8080-Acceptor][DirectJDKLog:173]: Counting up[http-nio-8080-Acceptor] latch=0
+[2024-09-09 11:52:40,445][DEBUG][restartedMain][DirectJDKLog:173]: Setting state for [Connector[HTTP/1.1-8080]] to [STARTED]
+[2024-09-09 11:52:40,447][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-09 11:52:40,448][DEBUG][restartedMain][DefaultLifecycleProcessor:184]: Successfully started bean 'webServerStartStop'
+[2024-09-09 11:52:40,449][DEBUG][restartedMain][DefaultLifecycleProcessor$LifecycleGroup:352]: Starting beans in phase 2147483647
+[2024-09-09 11:52:40,449][DEBUG][restartedMain][DefaultLifecycleProcessor:184]: Successfully started bean 'webServerGracefulShutdown'
+[2024-09-09 11:52:40,457][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.714 seconds (JVM running for 2.479)
+[2024-09-09 11:52:40,458][DEBUG][restartedMain][ApplicationAvailabilityBean:77]: Application availability state LivenessState changed to CORRECT
+[2024-09-09 11:52:40,460][INFO][restartedMain][RentalCrawlerServiceImpl:24]: Staring to fetch rental data...
+[2024-09-09 11:52:40,531][DEBUG][restartedMain][InternalLoggerFactory:63]: Using SLF4J as the default logging framework
+[2024-09-09 11:52:40,534][DEBUG][restartedMain][ResourceLeakDetector:129]: -Dio.netty.leakDetection.level: simple
+[2024-09-09 11:52:40,534][DEBUG][restartedMain][ResourceLeakDetector:130]: -Dio.netty.leakDetection.targetRecords: 4
+[2024-09-09 11:52:40,538][DEBUG][restartedMain][ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory:196]: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@39f72044
+[2024-09-09 11:52:40,541][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 82
+[2024-09-09 11:52:40,541][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 80
+[2024-09-09 11:52:40,542][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: name = "javax.management.ObjectName", codebase = ""
+[2024-09-09 11:52:40,551][DEBUG][restartedMain][PlatformDependent0:496]: -Dio.netty.noUnsafe: false
+[2024-09-09 11:52:40,551][DEBUG][restartedMain][PlatformDependent0:1000]: Java version: 8
+[2024-09-09 11:52:40,551][DEBUG][restartedMain][PlatformDependent0:137]: sun.misc.Unsafe.theUnsafe: available
+[2024-09-09 11:52:40,552][DEBUG][restartedMain][PlatformDependent0:161]: sun.misc.Unsafe.copyMemory: available
+[2024-09-09 11:52:40,553][DEBUG][restartedMain][PlatformDependent0:193]: sun.misc.Unsafe.storeFence: available
+[2024-09-09 11:52:40,553][DEBUG][restartedMain][PlatformDependent0:236]: java.nio.Buffer.address: available
+[2024-09-09 11:52:40,554][DEBUG][restartedMain][PlatformDependent0:307]: direct buffer constructor: available
+[2024-09-09 11:52:40,555][DEBUG][restartedMain][PlatformDependent0:385]: java.nio.Bits.unaligned: available, true
+[2024-09-09 11:52:40,555][DEBUG][restartedMain][PlatformDependent0:459]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[2024-09-09 11:52:40,555][DEBUG][restartedMain][PlatformDependent0:482]: java.nio.DirectByteBuffer.<init>(long, int): available
+[2024-09-09 11:52:40,555][DEBUG][restartedMain][PlatformDependent:1159]: sun.misc.Unsafe: available
+[2024-09-09 11:52:40,555][DEBUG][restartedMain][PlatformDependent:1289]: -Dio.netty.tmpdir: C:\Users\lucas\AppData\Local\Temp (java.io.tmpdir)
+[2024-09-09 11:52:40,555][DEBUG][restartedMain][PlatformDependent:1368]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[2024-09-09 11:52:40,556][DEBUG][restartedMain][PlatformDependent:1119]: Platform: Windows
+[2024-09-09 11:52:40,557][DEBUG][restartedMain][PlatformDependent:178]: -Dio.netty.maxDirectMemory: 3763863552 bytes
+[2024-09-09 11:52:40,557][DEBUG][restartedMain][PlatformDependent:185]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[2024-09-09 11:52:40,558][DEBUG][restartedMain][CleanerJava6:92]: java.nio.ByteBuffer.cleaner(): available
+[2024-09-09 11:52:40,558][DEBUG][restartedMain][PlatformDependent:205]: -Dio.netty.noPreferDirect: false
+[2024-09-09 11:52:40,564][DEBUG][restartedMain][PlatformDependent$Mpsc:1010]: org.jctools-core.MpscChunkedArrayQueue: available
+[2024-09-09 11:52:40,577][DEBUG][restartedMain][InternalThreadLocalMap:86]: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[2024-09-09 11:52:40,577][DEBUG][restartedMain][InternalThreadLocalMap:89]: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[2024-09-09 11:52:40,761][DEBUG][restartedMain][JdkSslContext:83]: Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+[2024-09-09 11:52:40,761][DEBUG][restartedMain][JdkSslContext:84]: Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+[2024-09-09 11:52:40,780][DEBUG][restartedMain][MultithreadEventLoopGroup:44]: -Dio.netty.eventLoopThreads: 16
+[2024-09-09 11:52:40,788][DEBUG][restartedMain][NioEventLoop:110]: -Dio.netty.noKeySetOptimization: false
+[2024-09-09 11:52:40,788][DEBUG][restartedMain][NioEventLoop:111]: -Dio.netty.selectorAutoRebuildThreshold: 512
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:157]: -Dio.netty.allocator.numHeapArenas: 16
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:158]: -Dio.netty.allocator.numDirectArenas: 16
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:160]: -Dio.netty.allocator.pageSize: 8192
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:165]: -Dio.netty.allocator.maxOrder: 9
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:169]: -Dio.netty.allocator.chunkSize: 4194304
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:170]: -Dio.netty.allocator.smallCacheSize: 256
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:171]: -Dio.netty.allocator.normalCacheSize: 64
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:172]: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:173]: -Dio.netty.allocator.cacheTrimInterval: 8192
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:174]: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:175]: -Dio.netty.allocator.useCacheForAllThreads: false
+[2024-09-09 11:52:40,811][DEBUG][restartedMain][PooledByteBufAllocator:176]: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[2024-09-09 11:52:40,821][DEBUG][restartedMain][ByteBufUtil:87]: -Dio.netty.allocator.type: pooled
+[2024-09-09 11:52:40,821][DEBUG][restartedMain][ByteBufUtil:96]: -Dio.netty.threadLocalDirectBufferSize: 0
+[2024-09-09 11:52:40,821][DEBUG][restartedMain][ByteBufUtil:99]: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[2024-09-09 11:52:40,871][DEBUG][Forwarding newSession on session null to remote][RemoteWebDriver:697]: Executing: newSession [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-gpu, --window-size=1920,1088], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-gpu, --window-size=1920,1088], extensions: []}}}]
+[2024-09-09 11:52:40,881][DEBUG][Driver Service Executor][UrlChecker:58]: Waiting for [http://localhost:62072/status]
+[2024-09-09 11:52:40,881][DEBUG][UrlChecker-2][UrlChecker:70]: Polling http://localhost:62072/status
+[2024-09-09 11:52:41,045][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 82
+[2024-09-09 11:52:41,046][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 80
+[2024-09-09 11:52:41,046][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: name = "javax.management.ObjectName", codebase = ""
+[2024-09-09 11:52:41,417][DEBUG][UrlChecker-2][UrlChecker:70]: Polling http://localhost:62072/status
+[2024-09-09 11:52:41,420][DEBUG][UrlChecker-2][LoggingProxyImpl:61]: sun.net.www.MessageHeader@1a155ff95 pairs: {GET /status HTTP/1.1: null}{User-Agent: Java/1.8.0_201}{Host: localhost:62072}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+[2024-09-09 11:52:41,424][DEBUG][UrlChecker-2][LoggingProxyImpl:61]: sun.net.www.MessageHeader@5f17c2df4 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 250}{Content-Type: application/json; charset=utf-8}{cache-control: no-cache}
+[2024-09-09 11:52:41,504][DEBUG][Forwarding newSession on session null to remote][DefaultChannelId:79]: -Dio.netty.processId: 23968 (auto-detected)
+[2024-09-09 11:52:41,506][DEBUG][Forwarding newSession on session null to remote][NetUtil:136]: -Djava.net.preferIPv4Stack: false
+[2024-09-09 11:52:41,506][DEBUG][Forwarding newSession on session null to remote][NetUtil:137]: -Djava.net.preferIPv6Addresses: false
+[2024-09-09 11:52:41,568][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 82
+[2024-09-09 11:52:41,569][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 80
+[2024-09-09 11:52:41,569][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: name = "javax.management.ObjectName", codebase = ""
+[2024-09-09 11:52:41,625][DEBUG][Forwarding newSession on session null to remote][NetUtilInitializations:129]: Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[2024-09-09 11:52:41,626][DEBUG][Forwarding newSession on session null to remote][NetUtil$SoMaxConnAction:191]: Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[2024-09-09 11:52:41,740][DEBUG][Forwarding newSession on session null to remote][DefaultChannelId:101]: -Dio.netty.machineId: 60:a5:e2:ff:fe:b7:c9:d8 (auto-detected)
+[2024-09-09 11:52:41,771][DEBUG][AsyncHttpClient-1-2][AbstractByteBuf:63]: -Dio.netty.buffer.checkAccessible: true
+[2024-09-09 11:52:41,771][DEBUG][AsyncHttpClient-1-2][AbstractByteBuf:64]: -Dio.netty.buffer.checkBounds: true
+[2024-09-09 11:52:41,772][DEBUG][AsyncHttpClient-1-2][ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory:196]: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5a3f2d70
+[2024-09-09 11:52:41,781][DEBUG][AsyncHttpClient-1-2][NettyConnectListener:73]: Using new Channel '[id: 0x9b13fc9d, L:/127.0.0.1:63473 - R:localhost/127.0.0.1:62072]' for 'POST' to '/session'
+[2024-09-09 11:52:41,793][DEBUG][AsyncHttpClient-1-2][Recycler:85]: -Dio.netty.recycler.maxCapacityPerThread: 4096
+[2024-09-09 11:52:41,794][DEBUG][AsyncHttpClient-1-2][Recycler:86]: -Dio.netty.recycler.ratio: 8
+[2024-09-09 11:52:41,794][DEBUG][AsyncHttpClient-1-2][Recycler:87]: -Dio.netty.recycler.chunkSize: 32
+[2024-09-09 11:52:41,794][DEBUG][AsyncHttpClient-1-2][Recycler:88]: -Dio.netty.recycler.blocking: false
+[2024-09-09 11:52:42,072][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 82
+[2024-09-09 11:52:42,073][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: (port 63430) op = 80
+[2024-09-09 11:52:42,073][DEBUG][RMI TCP Connection(2)-127.0.0.1][Log$LoggerLog:229]: RMI TCP Connection(2)-127.0.0.1: name = "javax.management.ObjectName", codebase = ""
+[2024-09-09 11:52:42,409][DEBUG][AsyncHttpClient-1-2][Brotli:38]: brotli4j not in the classpath; Brotli support will be unavailable.
+[2024-09-09 11:52:42,410][DEBUG][AsyncHttpClient-1-2][HttpHandler:70]: 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 491
+Content-Type: application/json; charset=utf-8
+host: localhost:62072
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 883
+
+[2024-09-09 11:52:42,415][DEBUG][AsyncHttpClient-1-2][ChannelManager:270]: Adding key: http://localhost:62072 for channel [id: 0x9b13fc9d, L:/127.0.0.1:63473 - R:localhost/127.0.0.1:62072]
+[2024-09-09 11:52:42,450][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-09 11:52:42,474][DEBUG][Forwarding newSession on session null to remote][RemoteWebDriver:700]: Executed: (Response: SessionID: 7d7c6aa51e0f2bbc349e934d58de5a67, Status: 0, Value: {acceptInsecureCerts=false, browserName=chrome, browserVersion=128.0.6613.120, chrome={chromedriverVersion=128.0.6613.120 (095705ac6d469e273c0fe064494a53a561381fc8-refs/branch-heads/6613@{#1465}), userDataDir=C:\Users\lucas\AppData\Local\Temp\scoped_dir8248_1412606628}, fedcm:accounts=true, goog:chromeOptions={debuggerAddress=localhost:63474}, networkConnectionEnabled=false, pageLoadStrategy=normal, platformName=windows, proxy=Proxy(), setWindowRect=true, strictFileInteractability=false, timeouts={implicit=0, pageLoad=300000, script=30000}, unhandledPromptBehavior=dismiss and notify, webauthn:extension:credBlob=true, webauthn:extension:largeBlob=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, webauthn:virtualAuthenticators=true})
+[2024-09-09 11:52:42,478][DEBUG][restartedMain][CdpEndpointFinder:117]: URI found: http://localhost:63474
+[2024-09-09 11:52:42,481][DEBUG][AsyncHttpClient-1-3][NettyConnectListener:73]: Using new Channel '[id: 0xfba75977, L:/127.0.0.1:63480 - R:localhost/127.0.0.1:63474]' for 'GET' to '/json/version'
+[2024-09-09 11:52:42,483][DEBUG][AsyncHttpClient-1-3][HttpHandler:70]: 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+host: localhost:63474
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Security-Policy: frame-ancestors 'none'
+Content-Type: application/json; charset=UTF-8
+content-length: 424
+
+[2024-09-09 11:52:42,483][DEBUG][AsyncHttpClient-1-3][ChannelManager:270]: Adding key: http://localhost:63474 for channel [id: 0xfba75977, L:/127.0.0.1:63480 - R:localhost/127.0.0.1:63474]
+[2024-09-09 11:52:42,492][DEBUG][restartedMain][ThreadLocalRandom:214]: -Dio.netty.initialSeedUniquifier: 0xda6e059a6477edf4
+[2024-09-09 11:52:42,495][DEBUG][AsyncHttpClient-1-4][NettyConnectListener:73]: Using new Channel '[id: 0x9b5bffea, L:/127.0.0.1:63481 - R:localhost/127.0.0.1:63474]' for 'GET' to '/devtools/browser/d4378933-112d-407c-8a54-addbc3f8d1de'
+[2024-09-09 11:52:42,497][DEBUG][AsyncHttpClient-1-4][WebSocketHandler:105]: 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/d4378933-112d-407c-8a54-addbc3f8d1de HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: UiwouuYwf7gS9DUvQ5d0sA==
+sec-websocket-version: 13
+origin: http://localhost:63474
+host: localhost:63474
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 403 Forbidden
+Content-Type: text/html
+content-length: 241
+
+[2024-09-09 11:52:42,498][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:280)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 11:52:42,498][DEBUG][AsyncHttpClient-1-4][ChannelManager:315]: Closing Channel [id: 0x9b5bffea, L:/127.0.0.1:63481 - R:localhost/127.0.0.1:63474] 
+[2024-09-09 11:52:42,501][DEBUG][AsyncHttpClient-1-4][AsyncHttpClientHandler:126]: Channel Closed: [id: 0x9b5bffea, L:/127.0.0.1:63481 ! R:localhost/127.0.0.1:63474] with attribute DISCARD
+[2024-09-09 11:52:42,502][DEBUG][restartedMain][DeferredLog:252]: Creating new Restarter for thread Thread[main,5,main]
+[2024-09-09 11:52:42,502][DEBUG][restartedMain][DeferredLog:252]: Immediately restarting application
+[2024-09-09 11:52:42,502][DEBUG][restartedMain][DeferredLog:252]: Starting application com.example.demo.DemoApplication with URLs [file:/D:/LineBot/demo/target/classes/]
+[2024-09-09 11:52:42,522][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:63474/devtools/browser/d4378933-112d-407c-8a54-addbc3f8d1de
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:34)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted
+[2024-09-09 11:52:42,522][DEBUG][restartedMain][ApplicationAvailabilityBean:77]: Application availability state ReadinessState changed to REFUSING_TRAFFIC
+[2024-09-09 11:52:42,522][DEBUG][restartedMain][AbstractApplicationContext:1049]: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@343f5903, started on Mon Sep 09 11:52:39 CST 2024
+[2024-09-09 11:52:42,523][DEBUG][restartedMain][DefaultLifecycleProcessor$LifecycleGroup:365]: Stopping beans in phase 2147483647
+[2024-09-09 11:52:42,524][DEBUG][restartedMain][DefaultLifecycleProcessor:238]: Bean 'webServerGracefulShutdown' completed its stop procedure
+[2024-09-09 11:52:42,525][DEBUG][restartedMain][DefaultLifecycleProcessor$LifecycleGroup:365]: Stopping beans in phase 2147483646
+[2024-09-09 11:52:42,652][DEBUG][restartedMain][DefaultLifecycleProcessor:238]: Bean 'webServerStartStop' completed its stop procedure
+[2024-09-09 11:52:42,652][DEBUG][restartedMain][DefaultLifecycleProcessor$LifecycleGroup:365]: Stopping beans in phase -2147483647
+[2024-09-09 11:52:42,652][DEBUG][restartedMain][DefaultLifecycleProcessor:238]: Bean 'springBootLoggingLifecycle' completed its stop procedure
+[2024-09-09 11:52:42,653][DEBUG][restartedMain][MBeanExporter:452]: Unregistering JMX-exposed beans on shutdown
+[2024-09-09 11:52:42,654][DEBUG][restartedMain][ExecutorConfigurationSupport:218]: Shutting down ExecutorService 'applicationTaskExecutor'
+[2024-09-09 11:57:48,327][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 25536 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-09 11:57:48,329][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-09 11:57:48,367][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-09 11:57:48,368][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-09 11:57:49,005][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-09 11:57:49,015][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:57:49,016][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-09 11:57:49,016][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-09 11:57:49,070][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-09 11:57:49,071][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 703 ms
+[2024-09-09 11:57:49,328][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-09 11:57:49,338][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-09 11:57:49,387][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-09 11:57:49,396][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.309 seconds (JVM running for 1.942)
+[2024-09-09 11:57:49,399][INFO][restartedMain][RentalCrawlerServiceImpl:24]: Staring to fetch rental data...
+[2024-09-09 11:57:51,314][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-09 11:57:51,351][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 11:57:51,371][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:64169/devtools/browser/28abdef0-b611-4f9b-ac3d-ec897f513b82
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:34)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted
+[2024-09-09 16:07:11,977][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 6584 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-09 16:07:11,979][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-09 16:07:12,018][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-09 16:07:12,018][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-09 16:07:12,846][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-09 16:07:12,857][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-09 16:07:12,858][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-09 16:07:12,859][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-09 16:07:12,933][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-09 16:07:12,933][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 915 ms
+[2024-09-09 16:07:13,227][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-09 16:07:13,237][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-09 16:07:13,291][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-09 16:07:13,299][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.603 seconds (JVM running for 2.335)
+[2024-09-09 16:07:13,301][INFO][restartedMain][RentalCrawlerServiceImpl:24]: Staring to fetch rental data...
+[2024-09-09 16:07:15,568][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-09 16:07:15,606][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-09 16:07:15,640][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50231/devtools/browser/a88a245e-e533-42dc-8956-7237363e7f09
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:34)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted

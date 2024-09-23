@@ -1,0 +1,231 @@
+[2024-09-12 15:28:23,008][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 21924 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-12 15:28:23,012][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-12 15:28:23,051][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-12 15:28:23,051][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-12 15:28:23,781][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-12 15:28:23,790][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-12 15:28:23,791][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-12 15:28:23,791][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-12 15:28:23,850][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-12 15:28:23,850][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 798 ms
+[2024-09-12 15:28:24,109][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-12 15:28:24,120][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-12 15:28:24,196][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-12 15:28:24,205][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.453 seconds (JVM running for 2.169)
+[2024-09-12 15:28:24,207][INFO][restartedMain][RentalCrawlerServiceImpl:24]: Staring to fetch rental data...
+[2024-09-12 15:28:28,709][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-12 15:28:28,752][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-12 15:28:28,780][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55796/devtools/browser/23a7b8a6-bf75-4ee7-a101-417df0fcbad0
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:34)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted
+[2024-09-12 15:29:27,778][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 14828 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-12 15:29:27,782][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-12 15:29:27,840][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-12 15:29:27,841][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-12 15:29:28,737][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-12 15:29:28,749][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-12 15:29:28,750][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-12 15:29:28,751][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-12 15:29:28,817][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-12 15:29:28,817][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 975 ms
+[2024-09-12 15:29:29,138][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-12 15:29:29,152][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-12 15:29:29,201][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-12 15:29:29,209][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.767 seconds (JVM running for 2.556)
+[2024-09-12 15:29:29,213][INFO][restartedMain][RentalCrawlerServiceImpl:24]: Staring to fetch rental data...
+[2024-09-12 15:29:31,735][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-12 15:29:31,788][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-12 15:29:31,819][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:56060/devtools/browser/b1967309-f509-4690-8360-3fa51002ff70
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:34)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted
+[2024-09-12 15:51:09,491][INFO][restartedMain][StartupInfoLogger:55]: Starting DemoApplication using Java 1.8.0_201 on SPRD-LucasNB with PID 18364 (D:\LineBot\demo\target\classes started by lucas in D:\LineBot\demo)
+[2024-09-12 15:51:09,493][INFO][restartedMain][SpringApplication:634]: No active profile set, falling back to 1 default profile: "default"
+[2024-09-12 15:51:09,532][INFO][restartedMain][DeferredLog:255]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-12 15:51:09,533][INFO][restartedMain][DeferredLog:255]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-12 15:51:10,363][INFO][restartedMain][TomcatWebServer:108]: Tomcat initialized with port(s): 8080 (http)
+[2024-09-12 15:51:10,372][INFO][restartedMain][DirectJDKLog:173]: Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-12 15:51:10,373][INFO][restartedMain][DirectJDKLog:173]: Starting service [Tomcat]
+[2024-09-12 15:51:10,373][INFO][restartedMain][DirectJDKLog:173]: Starting Servlet engine: [Apache Tomcat/9.0.68]
+[2024-09-12 15:51:10,431][INFO][restartedMain][DirectJDKLog:173]: Initializing Spring embedded WebApplicationContext
+[2024-09-12 15:51:10,431][INFO][restartedMain][ServletWebServerApplicationContext:292]: Root WebApplicationContext: initialization completed in 898 ms
+[2024-09-12 15:51:10,750][INFO][restartedMain][OptionalLiveReloadServer:59]: LiveReload server is running on port 35729
+[2024-09-12 15:51:10,762][INFO][restartedMain][DirectJDKLog:173]: Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-12 15:51:10,813][INFO][restartedMain][TomcatWebServer:220]: Tomcat started on port(s): 8080 (http) with context path ''
+[2024-09-12 15:51:10,822][INFO][restartedMain][StartupInfoLogger:61]: Started DemoApplication in 1.583 seconds (JVM running for 2.274)
+[2024-09-12 15:51:10,823][INFO][restartedMain][RentalCrawlerServiceImpl:26]: Staring to fetch rental data...
+[2024-09-12 15:51:12,796][INFO][Forwarding newSession on session null to remote][ProtocolHandshake:66]: Detected dialect: W3C
+[2024-09-12 15:51:12,834][WARN][AsyncHttpClient-1-4][WebSocket$Listener:66]: Invalid Status code=403 text=Forbidden
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[2024-09-12 15:51:12,866][ERROR][restartedMain][SpringApplication:824]: Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:60393/devtools/browser/27955256-2d2d-48de-8d97-5cefed34f0c2
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'SPRD-LUCASNB', ip: '10.0.0.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:105)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.util.Optional.map(Optional.java:215)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at com.example.demo.rental_crawler.service.impl.RentalCrawlerServiceImpl.fetchRentalData(RentalCrawlerServiceImpl.java:36)
+	at com.example.demo.rental_crawler.Runner.StartupRunner.run(StartupRunner.java:18)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	... 10 common frames omitted
